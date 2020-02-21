@@ -14,16 +14,17 @@ const App = () => {
 
   const AppContainer = styled.div `
     max-width: 1300px;
-    width: 100%;
+    width 100%;
     margin: 0 auto;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
   `;
 
   const AppTitle = styled.h1 `
-  width: 100%;
+    width: 100%;
     color: crimson;
+    font-size: 60px;
   `;
 
   const [data, setData] = useState([]);

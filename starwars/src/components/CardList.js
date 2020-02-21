@@ -3,15 +3,24 @@ import Card from './Card'
 import styled from 'styled-components';
 
 function CardList({data}) {
+
+    const CardList = styled.div `
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+    `;
+
     return(
-        <div>
+        <CardList>
             {data.map(character => {
             console.log(character);
             return(
             <Card character={character}/>
             )
         })}
-        </div>
+        </CardList>
     )
 }
 
