@@ -1,19 +1,18 @@
 import React from 'react';
+import Card from './Card'
+import styled from 'styled-components';
 
-function Card({data}) {
-    for(let key in data) {
-        console.log(data[key]);
-    }
+function CardList({data}) {
     return(
         <div>
             {data.map(character => {
             console.log(character);
             return(
-            <h1>{character.name}</h1>
+            <Card character={character}/>
             )
         })}
         </div>
     )
 }
 
-export default Card;
+export default CardList;
